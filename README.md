@@ -1,4 +1,4 @@
-Please install following libraries before running the project: 
+Please install NPM and these following libraries before running the project: 
 
 npm install @fortawesome/react-fontawesome styled-components @fortawesome/free-solid-svg-icons
 
