@@ -1,0 +1,80 @@
+/* styles.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-container {
+
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.fruit-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border: 4px solid #4CAF50;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.fruit {
+  position: absolute;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  color: #ffcc00;
+}
+
+.fruit:hover {
+  transform: scale(1.4);
+}
+
+.game-info {
+  margin-bottom: 20px;
+}
+
+.score-label,
+.time-remaining-label {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.game-over-message {
+  margin-top: 20px;
+}
+
+.restart-button,
+.exit-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.restart-button:hover,
+.exit-button:hover {
+  background-color: #45a049;
+}

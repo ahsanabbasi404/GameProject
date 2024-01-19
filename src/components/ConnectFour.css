@@ -1,0 +1,81 @@
+/* ConnectFour.css */
+
+.connect-four {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.player {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.player.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.cell.red {
+  background-color: #ff6961;
+}
+
+.cell.yellow {
+  background-color: #ffd700;
+}
+
+.cell.red-win {
+  background-color: #ff6961;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.cell.yellow-win {
+  background-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+}
+
+.result {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
